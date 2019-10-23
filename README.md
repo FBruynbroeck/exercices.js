@@ -1,2 +1,2 @@
 # exercices.js
-Bonsoir à tous
+Bonjour à tous !!!
