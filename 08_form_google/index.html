@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Recherche Google</title>
+    </head>
+    <body>
+        <h1>Recherche Google</h1>
+        <div style="text-align:center">
+            <img alt="google" src="https://www.google.be/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+            <!-- Par défaut le formulaire utilise la méthode GET -->
+            <form action="https://www.google.be/search" id="monform">
+                <!-- le nom de l'input est l'identifiant de la valeur envoyée.
+                     Dans notre cas, on retrouvera l'input dans l'url de l'action.
+                     Structure de l'url après submit: https://www.google.be/search?q=mavaleur -->
+                <input name="q" type="text" required>
+                <input type="submit" value="Rechercher">
+            </form>
+        </div>
+    </body>
+</html>
