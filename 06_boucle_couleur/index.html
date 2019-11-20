@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Couleur</title>
+    </head>
+    <body>
+        <h1>Couleur</h1>
+        Afficher une palette de couleur à partir d'un tableau de 16 sur 16.
+        <br>
+        Exemple de structure pour une cellule:
+        <pre>
+        <code>
+        &lt;td style="width:16px; height:16px; background-color:rgb(rouge, vert, bleu);"&gt;&lt;/td&gt;
+        </code>
+        </pre>
+
+La valeur rouge doit varier de ligne en ligne et prendre successivement toutes les valeurs comprises entre 0 et 240, par incrément de 16 (0, 16, 32, 48... 240)
+        <br>
+
+La valeur vert doit varier de colonne en colonne et prendre successivement toutes les valeurs comprises entre 0 et 240, par incrément de 16 (0, 16, 32, 48... 240)
+
+        <br>
+La valeur bleu sera demandée via prompt (essayez avec différentes valeurs)
+        <div id="couleur">
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
