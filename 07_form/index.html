@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <h1>Formulaire</h1>
+        <form action="" >
+            Votre nom : <input type="text" name="nom" required>
+            <br>
+            Sexe : <input type="radio" name="sexe" id="choiceH" value="H">
+            <label for="choiceH">Homme</label>
+            <input type="radio" name="sexe" id="choiceF" value="F">
+            <label for="choiceF">Femme</label>
+            <input type="radio" name="sexe" id="choiceN" value="N">
+            <label for="choiceN">Aucune idée...</label>
+            <br>
+            Votre date de naissance : <input type="date" name="date">
+            <br>
+            Célibataire : <input type="checkbox" name="celib">
+            <br>
+            Points : <input type="range" name="points" min="0" max="10">
+            <br>
+            Mot de passe : <input type="password" name="pwd">
+            <br>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
