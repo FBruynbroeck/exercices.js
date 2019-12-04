@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+
+.panel {
+    background: grey;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 150px;
+}
+
+img {
+    max-width: 100px;
+}

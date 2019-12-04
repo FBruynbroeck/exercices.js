@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Plutôt #Chat ou plutôt #Chien ?</title>
+        <link type="text/css" rel="stylesheet" href="default.css">
+        <!--On inclut d'abord la librairie jQuery (ici minifié) car lecture de l'html de haut en bas-->
+        <script src='jquery-3.3.1.min.js'></script>
+        <!--Et ensuite notre js qui utilisera la librairie-->
+        <script src='script.js'></script>
+    </head>
+    <body>
+        <h1>Plutôt #Chat ou plutôt #Chien ?</h1>
+        <div>
+            But: afficher une image de chat ou de chien en fonction du choix de l'utilisateur.
+            <br>
+            L'image doit apparaître en 800ms avec un slide jQuery (slideUp/slideDown) de haut en bas.
+            <br>
+            Si aucun choix, ne rien afficher.
+            <br>
+            Particularité: avoir un délai d'une seconde entre le moment où on affiche une image et le moment où on cache une image.
+            <br>
+            Si c'est la première fois qu'on affiche une image, ne pas prendre en compte le délai d'une seconde.
+            <br>
+            <a href="https://api.jquery.com/slideup/">Doc slideUp</a>
+            <br>
+            <a href="https://api.jquery.com/slidedown/">Doc slideDown</a>
+            <br>
+            <a href="https://api.jquery.com/delay/">Doc delay</a>
+        </div>
+        <br>
+        <select id="monselect" class="maclasse">
+            <option value='empty'>Fais ton choix...</option>
+            <option value='c1'>Team Chat</option>
+            <option value='c2'>Team Chien</option>
+        </select>
+        <br>
+        <br>
+        <div class="choix panel hidden" id="c1">
+            Moooooonnnn quel beau chat !!!
+            <img src="https://www.18h39.fr/wp-content/uploads/2019/04/chat-trop-chou-600x420.jpg" alt="Chat">
+        </div>
+        <div class="choix panel hidden" id="c2">
+            Moooooonnnn quel beau chien !!!
+            <img src="https://i.pinimg.com/originals/03/db/a1/03dba1f979bbb64c5cf5b29b52ef29d7.jpg" alt="Chien">
+        </div>
+    </body>
+</html>
