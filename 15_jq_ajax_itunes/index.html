@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Itunes</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src='jquery-3.3.1.min.js'></script>
+        <script src='listing.js'></script>
+<!--        <script src='lyrics.js'></script>-->
+    </head>
+    <body>
+        <h1>Itunes</h1>
+        <div>
+            Formulaire de recherche de musique dans la db Itunes.
+            <br>
+            Fonctionnement: L'utilisateur encode un artiste et/ou un titre de musique. A la validation du formulaire, une liste de musique sera affichée en dessous du formulaire avec à chaque fois un échantillon de musique qu'il va pouvoir écouter depuis son navigateur.
+            <br>
+            Bonus: rajouter un bouton "Lyrics" qui affichera dans un popup les paroles de la musique souhaitée.
+            <br>
+            <a href='https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/'>Doc Webservice Itunes</a>
+            <br>
+            <a href='https://lyricsovh.docs.apiary.io/#reference/0/lyrics-of-a-song/search'>Webservice lyrics.ovh</a>
+            <br>
+            Exemple d'utilisation du WS Itunes en GET: <a href="https://itunes.apple.com/search?term=indochine&entity=song">https://itunes.apple.com/search?term=indochine&entity=song</a>
+            <br>
+            Exemple d'utilisation du WS lyrics.ovh en GET: <a href="https://api.lyrics.ovh/v1/renaud/les%20bobos">https://api.lyrics.ovh/v1/renaud/les%20bobos</a>
+            <br>
+            Attention: si vous contactez le WS Itunes en local, il faut utilser "jsonp" comme dataType afin de contourner la sécurité CORS. Explication <a href="http://margaine.com/2014/06/28/jsonp-vs-cors.html">ici</a>
+        </div>
+        <br>
+        <form id="monform">
+            <!-- Param term qui sera envoyé au ws pour rechercher une musique  -->
+            <input type="text" name="term">
+            <!-- Param kind qui sera envoyé au ws pour définir le type de recherche -->
+            <input type="hidden" name="entity" value="song">
+            <input type="submit" value="Rechercher">
+        </form>
+        <div id="resultat"></div>
+
+    </body>
+</html>
