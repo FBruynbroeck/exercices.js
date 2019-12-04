@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Relink</title>
+        <script src='jquery-3.3.1.min.js'></script>
+        <script src='script.js'></script>
+    </head>
+    <body>
+        <h1>Relink</h1>
+        <div>
+            But: Utiliser un webservice qui va générer une redirection d'url (ex: twitter)
+            <br>
+            Fonctionnement: l'utilisateur encode une URL. A la validation du formulaire, le ws sera contacté et la réponse sera affichée en desous du formulaire.
+            <br>
+            <a href="https://rel.ink/">Webservice rel.ink</a>
+        </div>
+        <br>
+        <form id="monform">
+            <input type="text" name="url">
+            <input type="submit" value="Générer">
+        </form>
+        <div id="resultat"></div>
+    </body>
+</html>
